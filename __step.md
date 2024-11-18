@@ -13,5 +13,10 @@ app.get('/', (req,res) => {
     res.render('index')
 })
 
+for get user data 
+app.use(express.json())
+
+for get user data by from
+app.use(express.urlencoded({extended:true}))
 
 for authenticate use json web token and bcrypt
