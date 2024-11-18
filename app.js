@@ -1,5 +1,5 @@
 const express = require('express')
-
+const cookieParser = require('cookie-parser')
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config()
@@ -10,7 +10,8 @@ connectToDb()
 const userRouter = require('./routes/user.routes');
 
 //for ejs setup
-app.set('view engine','ejs') // then create views folder in root
+app.set('view engine', 'ejs') // then create views folder in root
+app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 

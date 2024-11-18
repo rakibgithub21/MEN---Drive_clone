@@ -23,3 +23,6 @@ install express validator package for validate user data
 
 install mongoose
 for authenticate use json web token and bcrypt
+install json web token
+
+install cookie-parser
