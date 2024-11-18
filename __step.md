@@ -21,4 +21,7 @@ app.use(express.urlencoded({extended:true}))
 
 install express validator package for validate user data
 
+install mongoose
+
+
 for authenticate use json web token and bcrypt
