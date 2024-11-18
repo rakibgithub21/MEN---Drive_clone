@@ -19,4 +19,6 @@ app.use(express.json())
 for get user data by from
 app.use(express.urlencoded({extended:true}))
 
+install express validator package for validate user data
+
 for authenticate use json web token and bcrypt
